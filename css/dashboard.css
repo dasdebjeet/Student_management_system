@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anton_font{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    /* position: relative; */
+    background: url("../assests/dashboard_page_bg.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    /* min-height: 100vh; */
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    background: transparent;
+    width: 100%;
+    /* min-height: 100vh; */
+    padding: 70px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.dashboard_con{
+    /* background: #ffffff; */
+    width: 100%;
+    height: calc(100vh - 140px);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dashboard_con .sub_grp1{
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #ffffff;
+    width: calc(100% - 500px);
+    height: 100%;
+}
+
+.dashboard_navbar{
+    flex-direction: column;
+    /* width: 50px; */
+    height: 100%;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+
+.dashboard_navbar .icon_con{
+    /* width: 25px; */
+    /* height: 25px; */
+    margin: 20px 5px;
+    padding: 10px;
+    color: #cdcdcd;
+    border-radius: 15px;
+    cursor: pointer;
+
+
+    /* border: 1px solid blue; */
+}
+
+.dashboard_navbar .active{
+    background: #ebebeb;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+
+    color: #000000;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition:  background-image 0.5s ease-in-out;
+}
+
+/* .dashboard_navbar .icon_con:hover{
+    background: #ebebeb;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+
+    color: #000000;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+} */
+
+.dashboard_navbar .icon_con i{
+    font-size: 25px;
+}
+
+.dashboard_report_con{
+    width: 100%;
+    height: 100%;
+    padding: 80px 80px 80px 15px;
+}
+
+.dashboard_report_con .heading,
+.dashboard_report_con .student_name{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.dashboard_report_con .heading{
+    margin-bottom: 5px;
+}
+
+.dashboard_report_con .head_subtitle{
+    font-size: .8em;
+    color: #898989;
+}
+
+.summary_report{
+    margin-top: 3.8em;
+}
+
+.summary_report h2{
+    font-size: 20px;
+}
+
+.summary_report_data{
+    justify-content:space-between;
+    background: #898989;
+    background-image: linear-gradient(120deg, #66a6ff 0%, #89f7fe 100%);
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.report_data{
+    /* background: #00000012; */
+    width: 100%;
+    margin-right: 0.5em;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.report_data:last-child{
+    margin-right: 0;
+}
+
+.report_data .title{
+    margin-bottom: 8px;
+    font-size: 1.5em;
+}
+
+.report_data .count span{
+    color: #ffffff;
+    font-size: 1.8em;
+}
+
+.report_data .details{
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+/* sub_grp2 */
+.dashboard_con .sub_grp2{
+    align-items: flex-start;
+    background: #ffffff45;
+    width: 25em;
+    height: 100%;
+    padding: 80px 15px;
+}
+
+.student_profile_con{
+    flex-direction: column;
+}
+
+.student_profile_con .student_img{
+    background: #ffffff;
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.student_profile_con .profile_details{
+    flex-direction: column;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.student_profile_con .profile_details>div{
+    margin-bottom: 5px;
+}
+
+.student_profile_con .profile_details .student_fullname{
+    margin-bottom: 15px;
+    font-size: 1.4em;    
+}
